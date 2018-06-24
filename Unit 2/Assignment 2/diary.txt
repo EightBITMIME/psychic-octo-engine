@@ -36,7 +36,23 @@
  ### HTML Validation
  https://validator.w3.org/nu/#file
 ## Logo Maker
-https://spark.adobe.com/make/logo-maker/
+
+
+## HTML Reference:
+https://www.w3schools.com/html/default.asp
+
+## What I learned
+
+ - Whitespace doesn't matter
+ - Headings go from 1 -6. Heading 1 is commonly used by browsers
+ - Block elements contain block and line elements. Basic container for grouping
+ - Inline contain text or inline items. They can change the look of a block of text.
+ - "A" is for anchor. <a name="Anchor"></a> creates an anchor in a document.
+ - Absolute links should be for external, relative should be used within the site
+ - Base element applies to all relative links
+ - Cell formating in tables is deprecated. Do not use it.
+ - TFoot has changed a lot from most of the information on the internet. The W3 validator needs it to be below the TBody despite what it says pretty much every where else. Firefox displays it fine either way.
+ - "Free" Logo design sites are mostly a scam. After trying a bunch, I just used MS Paint.
 
 
 ## Errors
@@ -52,15 +68,74 @@ Unit 2 first check in:
         From line 10, column 2; to line 10, column 26
             UTF-8"/>↩ <meta charset="utf-8" />↩</hea
 
-## What I learned
+Unit 2 Check in after Tables:
+    Error: The cellpadding attribute on the table element is obsolete. Use CSS instead.
 
- - Whitespace doesn't matter
- - Headings go from 1 -6. Heading 1 is commonly used by browsers
- - Block elements contain block and line elements. Basic container for grouping
- - Inline contain text or inline items. They can change the look of a block of text.
- - "A" is for anchor. <a name="Anchor"></a> creates an anchor in a document.
- - Absolute links should be for external, relative should be used within the site
- - Base element applies to all relative links
- - Cell alignment in tables is deprecated. 
+    From line 86, column 13; to line 86, column 111
+
+              <table cellpadding="10px" cellspacing="10px" width=50% border="1" summary="This is a sample table">↩     
+
+    Error: The cellspacing attribute on the table element is obsolete. Use CSS instead.
+
+    From line 86, column 13; to line 86, column 111
+
+              <table cellpadding="10px" cellspacing="10px" width=50% border="1" summary="This is a sample table">↩     
+
+    Error: The width attribute on the table element is obsolete. Use CSS instead.
+
+    From line 86, column 13; to line 86, column 111
+
+              <table cellpadding="10px" cellspacing="10px" width=50% border="1" summary="This is a sample table">↩     
+
+    Error: The summary attribute on the table element is obsolete. Consider describing the structure of the table in a caption element or in a figure element containing the table; or, simplify the structure of the table so that no description is needed.
+
+    From line 86, column 13; to line 86, column 111
+
+              <table cellpadding="10px" cellspacing="10px" width=50% border="1" summary="This is a sample table">↩     
+
+    Warning: The border attribute on the table element is presentational markup. Consider using CSS instead. For example: table, td, th { border: 1px solid gray }
+
+    From line 86, column 13; to line 86, column 111
+
+              <table cellpadding="10px" cellspacing="10px" width=50% border="1" summary="This is a sample table">↩     
+
+    Warning: A table row was 3 columns wide and exceeded the column count established by the first row (2).
+
+    From line 96, column 62; to line 97, column 25
+
+    ned 3</td>↩                    </tr>↩     
+
+    Error: Element tbody not allowed as child of element table in this context. (Suppressing further errors from this subtree.)
+
+    From line 98, column 25; to line 99, column 23
+
+      </tfoot>↩                <tbody>↩     
+
+    Contexts in which element tbody may be used:
+        As a child of a table element, after any caption, colgroup, and thead elements, but only if there are no tr elements that are children of the table element. 
+    Content model for element table:
+        In this order: optionally a caption element, followed by zero or more colgroup elements, followed optionally by a thead element, followed by either zero or more tbody elements or one or more tr elements, followed optionally by a tfoot element, optionally intermixed with one or more script-supporting elements. 
+
+    Warning: A table row was 3 columns wide and exceeded the column count established by the first row (2).
+
+    From line 103, column 53; to line 104, column 25
+
+    wspan</td>↩                    </tr>↩     
+
+    Warning: A table row was 3 columns wide and exceeded the column count established by the first row (2).
+
+    From line 107, column 35; to line 108, column 25
+
+    <td>D</td>↩                    </tr>↩↩    
+
+
+
+
+
+
+
+
+
+
 
 
