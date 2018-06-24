@@ -1,0 +1,34 @@
+
+##TODO
+- [ ] At least three well designed pages
+- [ ] Inline images
+- [ ] Hyperlinks between all the pages
+- [ ] Hyperlinks to External website
+- [ ] At least two heading styles
+- [ ] One list
+- [ ] One div tag
+- [ ] one span tag
+- [ ] a table
+- [ ] a form that emails the author (me)
+
+
+##Build Notes
+ - I will create a standard template I will use for all of the pages so I can create the shell of the page and reuse it.
+ - Web site originally only had four pages. Now I'm adding another for the author contact page:
+    - Consent.html
+    - CurrentSession.html
+    - AccessHistory.html
+    - FAQ.html
+    - Contact.html
+ - I need to create a logo and an email address for this site.
+ - All this needs to be posted to the AU site.
+
+
+
+ ## Learning
+ I know quite a bit about HTML so this should be easy. I just need to resist the urge to use HTML autocomplete and addons with this. I'll use flat notepad to create the pages and then validate it with VS.Code to make sure there's nothing terrible I missed. I need to figure out what div and span tags are used for and I need to figure out something clever to prevent easy enumeration of the email address in the contact box.
+
+
+ Resources:
+ https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents 
+ 
