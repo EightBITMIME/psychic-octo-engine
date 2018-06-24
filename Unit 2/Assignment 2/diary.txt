@@ -35,7 +35,7 @@
  https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents 
  ### HTML Validation
  https://validator.w3.org/nu/#file
-## Logo Maker
+
 
 
 ## HTML Reference:
