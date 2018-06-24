@@ -29,6 +29,10 @@
  I know quite a bit about HTML so this should be easy. I just need to resist the urge to use HTML autocomplete and addons with this. I'll use flat notepad to create the pages and then validate it with VS.Code to make sure there's nothing terrible I missed. I need to figure out what div and span tags are used for and I need to figure out something clever to prevent easy enumeration of the email address in the contact box.
 
 
- Resources:
+## Resources:
+ ### HTML training
  https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents 
- 
+ ### HTML Validation
+ https://validator.w3.org/nu/#file
+
+
