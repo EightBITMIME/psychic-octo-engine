@@ -29,12 +29,18 @@
  ## Learning
  I know quite a bit about HTML so this should be easy. I just need to resist the urge to use HTML autocomplete and addons with this. I'll use flat notepad to create the pages and then validate it with VS.Code to make sure there's nothing terrible I missed. I need to figure out what div and span tags are used for and I need to figure out something clever to prevent easy enumeration of the email address in the contact box.
 
+ Implementing a consent box without using javascript was harder than I expected. It's sort of hacky but it will improve once I bring some scripting into the site.
+
+ For the "Current Session" page, I intend on having four tables in total but I think I need CSS to do that. I tried to do it with tables inside tables but I couldn't get it past the validator and honestly it doesn't make sense with the ultimate design of the site. 
+
 
 ## Resources:
  ### HTML training
  https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents 
  ### HTML Validation
  https://validator.w3.org/nu/#file
+ ### Privacy Policy Generator
+ https://privacypolicytemplate.net/
 
 
 
@@ -52,7 +58,8 @@ https://www.w3schools.com/html/default.asp
  - Base element applies to all relative links
  - Cell formating in tables is deprecated. Do not use it.
  - TFoot has changed a lot from most of the information on the internet. The W3 validator needs it to be below the TBody despite what it says pretty much every where else. Firefox displays it fine either way.
- - "Free" Logo design sites are mostly a scam. After trying a bunch, I just used MS Paint.
+ - "Free" Logo design sites are mostly a scam. After trying a bunch, I just used MS Paint for the final product.
+ - 
 
 
 ## Errors

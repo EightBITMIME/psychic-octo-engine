@@ -4,7 +4,7 @@
     Comment Block
 -->
 <head>
-    <title>Template</title>
+    <title>Current Session</title>
     <meta name="Author" content="Dwayne Cyr" />
     <meta name="Description" content="Privacy Explorer"/>
     <meta name="Keywords" content="Privacy"/>
@@ -12,105 +12,95 @@
 </head>
 
 <body>
-    <div id="Headings">
-        <h1>heading1</h1>
-        <h2>heading2</h2>
-        <h3>heading3</h3>
-        <h4>heading4</h4>
-        <h5>heading5</h5>
-        <h6>heading6</h6>
-    </div>
-
-
-    <div id="samples">
-     <p>Hello World</p>
-     <div>Hello</div>
-     <div>World</div> 
-     <span>Hello</span>
-     <span>World</span> 
-     <hr />
-     <pre>
-        this will   render
-            with whitespace
-     </pre>
-     <div> this is how you write &lt; &gt;</div>
-     <sub>subscript</sub>
-     <sup>superscript</sup>
-     <cite>citation</cite>Before break
-     <br />Break<br />After break
-     <abbr title=abbreviation>abbr</abbr>
-     <em>emphasis</em>
-     <strong>strong</strong>
-     <code>code</code>
-     <q>quote</q>
-     <blockquote cite="https://www.google.com">blockquote</blockquote>
-     <kbd>Keyboardinput</kbd>
-    </div>
-    
-    <div id="image" class="rightNav">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg" alt="example image" height="100" width="100">
-    </div>
-
-
-    <div id="Lists">
-        <ul>
-            <li>one
-                <ul>
-                    <li>is</li>
-                    <li>the</li>
-                    <li>loneliest</li>
-                    <li>number
-                        <ol>
-                            <li>that</li>
-                            <li>i</li>
-                            <li>ever</li>
-                            <li>knew</li>
-                        </ol>
-                    </li>
-                </ul>
-            </li>
-            <li>banana</li>
-            <li>computer</li>
-        </ul>
-        <ol>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-        </ol>
-        <dl>
-            <dt>DEFLIST</dt>
-            <dd>this is a definition list. Definition goes here</dd>
-        </dl>
-
-        <div id="table">
-            <table>
-                <caption>Table Caption</caption>
+    <div id="TopSection">
+        <h1>Current Session</h1>
+        <h2>User Information</h2>
+        <table>
+                <caption>User Information</caption>
                 <thead>
                     <tr>
-                        <th> Heading 1</th>
-                        <th> Heading 2</th>
-                        <th> Heading 3</th>
+                        <th> Email </th>
+                        <th> First Name </th>
+                        <th> Last Name </th>
+                        <th> Postal Code </th>
+                        <th> Phone Number </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>A</td>
-                        <td>B</td>
-                        <td rowspan="2">rowspan</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                </tbody>
+            </table>
+            <hr />
+    </div>
+    <div id="ServerInfo">
+        <h2> Server Information</h2>
+        <table>
+            <caption>Server Information</caption>
+            <tbody>
+                <tr>
+                    <td>Attribute</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                        <td>Attribute</td>
+                        <td>Value</td>
+                </tr>
+                <tr>
+                        <td>Attribute</td>
+                        <td>Value</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+    </div>
+    <div id="OSINT">
+            <h2> Opensource Intelligence</h2>
+            <table>
+                <caption>Opensource Intelligence</caption>
+                <tbody>
+                    <tr>
+                        <td>Attribute</td>
+                        <td>Value</td>
                     </tr>
                     <tr>
-                        <td>C</td>
-                        <td>D</td>
+                            <td>Attribute</td>
+                            <td>Value</td>
+                    </tr>
+                    <tr>
+                            <td>Attribute</td>
+                            <td>Value</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                        <tr>
-                            <td colspan="3">Footer spanned 3</td>
-                        </tr>
-                </tfoot>
             </table>
+            <hr />
         </div>
-    </div>
+        <div id="Session">
+                <h2> Session Information</h2>
+                <table>
+                    <caption>Session Information</caption>
+                    <tbody>
+                        <tr>
+                            <td>Attribute</td>
+                            <td>Value</td>
+                        </tr>
+                        <tr>
+                                <td>Attribute</td>
+                                <td>Value</td>
+                        </tr>
+                        <tr>
+                                <td>Attribute</td>
+                                <td>Value</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr />
+            </div>
+
 
     <!--This my standard page navigation-->
     <div id="pagenav">
