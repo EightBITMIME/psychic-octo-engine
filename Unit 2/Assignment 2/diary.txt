@@ -22,6 +22,7 @@
     - Contact.html
  - I need to create a logo and an email address for this site.
  - All this needs to be posted to the AU site.
+ - I built a template page with validated examples of all the various HTML components. Then I can just edit as needed.
 
 
 
@@ -34,5 +35,32 @@
  https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents 
  ### HTML Validation
  https://validator.w3.org/nu/#file
+## Logo Maker
+https://spark.adobe.com/make/logo-maker/
+
+
+## Errors
+
+Unit 2 first check in:
+
+	1. Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.
+        From line 1, column 16; to line 2, column 6
+            TYPE html>↩<html>↩↩<hea
+        For further guidance, consult Declaring the overall language of a page and Choosing language tags.
+    If the HTML checker has misidentified the language of this document, please file an issue report or send e-mail to report the problem.
+	2. Error: A document must not include both a meta element with an http-equiv attribute whose value is content-type, and a meta element with a charset attribute.
+        From line 10, column 2; to line 10, column 26
+            UTF-8"/>↩ <meta charset="utf-8" />↩</hea
+
+## What I learned
+
+ - Whitespace doesn't matter
+ - Headings go from 1 -6. Heading 1 is commonly used by browsers
+ - Block elements contain block and line elements. Basic container for grouping
+ - Inline contain text or inline items. They can change the look of a block of text.
+ - "A" is for anchor. <a name="Anchor"></a> creates an anchor in a document.
+ - Absolute links should be for external, relative should be used within the site
+ - Base element applies to all relative links
+ - Cell alignment in tables is deprecated. 
 
 
