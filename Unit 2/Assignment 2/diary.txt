@@ -1,29 +1,51 @@
 
 ##TODO
-- [ ] At least three well designed pages
-- [ ] Inline images
-- [ ] Hyperlinks between all the pages
-- [ ] Hyperlinks to External website
-- [ ] At least two heading styles
-- [ ] One list
-- [ ] One div tag
-- [ ] one span tag
-- [ ] a table
-- [ ] a form that emails the author (me)
+- [X] At least three well designed pages
+- [X] Inline images
+- [X] Hyperlinks between all the pages
+- [X] Hyperlinks to External website
+- [X] At least two heading styles
+- [X] One list
+- [X] One div tag
+- [X] one span tag
+- [X] a table
+- [X] a form that emails the author (me)
+
+## HTML Examples
+###sample1.html
+- Document is missing Doctype, language, a title and meta tags.
+- No indenting structure or div tags
+- First paragraph is missing a closing </p>
+- H2 on line 12 is missing a closing </h2>
+- Deprecated indent tags used on line 14
+- <h3> on line 15 is not closed
+- href on line 17 is improperly formatted and points to an impossible path (it should be ./sample.html)
+- tags are mixed case throughout. They should be uniformly lower case.
+- <img src> tag on line 21 is not in <a> tags
+- h3 on line 22 is not terminated
+- half the list entries on line 23 are not terminated. The second <ul> is missing a closing bracket.
+- Border attribute on line 26 is deprecated. 
+- <td> elements throughout the table are not closed with a corresponding </td>
+- colspan attribute on 28 is deprecated.
+
+###Untitled Document.html
+ - Missing quotes on line 5 on content and charset
+ - Could use some indents to make it easier to read if it had more content.
 
 
 ##Build Notes
- - I will create a standard template I will use for all of the pages so I can create the shell of the page and reuse it.
+ - I created a standard template I will use for all of the pages so I can create the shell of the page and reuse it.
  - Web site originally only had four pages. Now I'm adding another for the author contact page:
     - Consent.html
     - CurrentSession.html
     - AccessHistory.html
     - FAQ.html
     - Contact.html
- - I need to create a logo and an email address for this site.
- - All this needs to be posted to the AU site.
+ - I added a Privacy Policy using privacypolicytemplate.net's service.
+ - I created a logo and an email address for this site.
+ - I posted this to student.athabascau.ca. Page is now hosted here: http://student.athabascau.ca/~dwaynecy/
  - I built a template page with validated examples of all the various HTML components. Then I can just edit as needed.
-
+ - All the examples I found of FAQs structured like I want are all using CSS for the show / hide part. I am going to build my Unit 2 version just using a simple unordered list.
 
 
  ## Learning
@@ -31,7 +53,7 @@
 
  Implementing a consent box without using javascript was harder than I expected. It's sort of hacky but it will improve once I bring some scripting into the site.
 
- For the "Current Session" page, I intend on having four tables in total but I think I need CSS to do that. I tried to do it with tables inside tables but I couldn't get it past the validator and honestly it doesn't make sense with the ultimate design of the site. 
+ For the "Current Session" page, I intend on having four tables in total but I think I need CSS to do that. I tried to do it with tables inside tables but I couldn't get it past the validator and honestly it doesn't make sense with the ultimate design of the site. I think all the table entries will end up looking kind of rough at this point but bringing in CSS (and table data) will really clean it up.
 
 
 ## Resources:
@@ -41,30 +63,38 @@
  https://validator.w3.org/nu/#file
  ### Privacy Policy Generator
  https://privacypolicytemplate.net/
-
-
-
-## HTML Reference:
-https://www.w3schools.com/html/default.asp
+ ### HTML Reference:
+ https://www.w3schools.com/html/default.asp
+ ### HTML / Mailto Email form
+ https://www.lifewire.com/tutorial-on-mailto-forms-3467454
 
 ## What I learned
 
- - Whitespace doesn't matter
+ - Whitespace doesn't matter in HTML.
  - Headings go from 1 -6. Heading 1 is commonly used by browsers
  - Block elements contain block and line elements. Basic container for grouping
  - Inline contain text or inline items. They can change the look of a block of text.
- - "A" is for anchor. <a name="Anchor"></a> creates an anchor in a document.
  - Absolute links should be for external, relative should be used within the site
  - Base element applies to all relative links
  - Cell formating in tables is deprecated. Do not use it.
  - TFoot has changed a lot from most of the information on the internet. The W3 validator needs it to be below the TBody despite what it says pretty much every where else. Firefox displays it fine either way.
  - "Free" Logo design sites are mostly a scam. After trying a bunch, I just used MS Paint for the final product.
- - 
+ - If you are working in a text editor, jumping back to a slower rich text editor (Evernote) is not worth the hassle. It is just as easy to just use a text file to capture diary information.
+
+## What did not go well
+ I spent a lot of time typing then removing deprecated attributes. The standard has changed a lot and a lot of the online examples and tutorials are aging poorly. 
+
+ I also spent a lot more time than I should on getting the three tables in "CurrentSession.html" to work. I think I learned a lot about tables in the process but lost most of an afternoon.
+
+## What I would do differently
+ - I would absolutely use a richer text editor like VS.code. Things like tag autocompletion and autoindentation are a huge improvement over basic notepad. Just having line numbers would have improved the experience greatly. 
+ - For the next module I'm going to try to setup Git to talk to the student server directly so I can work "live" from the online server. It will save a little time and I will learn a little bit more about git in the process.
+ - If I was doing this after completing the course I would focus more on building out the capability before building the pages. My current set have a lot of placeholder data. Also using CSS and Javascript would have made some of the table building easier to troubleshoot.
 
 
 ## Errors
 
-Unit 2 first check in:
+###Unit 2 first check in:
 
 	1. Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.
         From line 1, column 16; to line 2, column 6
@@ -75,7 +105,7 @@ Unit 2 first check in:
         From line 10, column 2; to line 10, column 26
             UTF-8"/>↩ <meta charset="utf-8" />↩</hea
 
-Unit 2 Check in after Tables:
+###Unit 2 Check in after Tables:
     Error: The cellpadding attribute on the table element is obsolete. Use CSS instead.
 
     From line 86, column 13; to line 86, column 111
