@@ -11,19 +11,15 @@
     <meta name="Last Updated" content="6-24-2018"/>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script type="text/javascript" src="userinfo.js"></script>
+    <script type="text/javascript" src="privateip.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 
 <body>
 
+        
+        <script src="privateip.js"></script>
 
-        <script type="text/javascript">
-            UserInfo.getInfo(function(data) {
-              // the "data" object contains the info
-            }, function(err) {
-              // the "err" object contains useful information in case of an error
-            });
-            </script>
 
     <div id="data">
 
@@ -41,6 +37,7 @@
                         <th> Last Name </th>
                         <th> Postal Code </th>
                         <th> Phone Number </th>
+                        <th> Private IP Addr</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,6 +47,7 @@
                         <td>Value</td>
                         <td>Value</td>
                         <td>Value</td>
+                        <td><p class='ipAdd'></p></td>
                 </tbody>
             </table>
     </div>

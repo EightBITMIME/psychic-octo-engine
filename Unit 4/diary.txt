@@ -1,5 +1,11 @@
 #ToDo
- [ ] Cite in comments
+[ ] Find a small piece of javascript
+[ ] Validate license
+[ ] Incorporate into your site
+[ ] Cite source
+[ ] Explain what the code does
+[ ] Update Unit 1 Documentation preserving Original
+
 
 
 
@@ -9,27 +15,21 @@
 
 
 #Build Notes
-For the "CurrentSession" tables I tried several different approaches using floats and absolutes. Ultimately I just went with %based left aligned floats. It looks better and I kept running into top alignment problems.
-In testing some of the mobile browsers I found the percentage based layouts did not work well but I found a way to do conditional layout for low width screens.
-I removed the hardlines from the tables on current session. I needed them before I had CSS to tell where one started and one finished but now they just cause clutter.
-I rebuilt the FAQ page to take advantage of CSS. It's not an unordered list anymore but the results are IMO better and I learned a lot about CSS rebuilding it.
+Most of the examples / samples I found are missing the return component. I assume things like Angular, Node and Jquery make these easy bolt ons but getting the results of the script back into the page are not intuitive.
+
+
 
 
 #What I learned
-- Add <link rel="stylesheet" type="text/css" href="mystylesheet.css" /> to add a stylesheet
-- Always use external
-- ID can only be used once per page
-- Class can be used multiple times per page
-- selectors:
-    Whitespace - and
-    > child selector
-    : pseudo classes 
-/* comment */
-Keywords:
-    thin, thick, larger
-Specificity - the more targetted something is, the more powerful the match
-Box Model 
-If you use a background color, it's easier to see where your blocks are during layout
+Use External Javascript: <link  type="text/javascript" src="myscript.js" /> </script>
+In page Javascript:
+    <script type="text/javascript">
+    // some Javascript commands...
+    </script>
+Ah, now I get it. Linking is only one part -to execute the script, you need to use this syntax:
+<script type="text/javascript" src="privateip.js"></script>
+
+
 
 
 #What did not go well
@@ -39,25 +39,16 @@ If you use a background color, it's easier to see where your blocks are during l
 
 
 #Reference
-Compatibility
-https://quirksmode.org/css/
-All Properties
-https://www.w3schools.com/cssref/css3_pr_all.asp
-Three Column layout
-https://www.w3schools.com/howto/howto_css_three_columns.asp
-CSS Color codes:
-Google "css color picker"
-Color Scheme Generator:
-https://coolors.co/
-Medium Article on CSS:
-https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
-Table Centering with CSS:
-https://www.granneman.com/webdev/coding/css/centertables
-Fancy FAQ Page using CSS3:
-https://catalin.red/fancy-faq-page-using-css3-only/
+Stack Overflow link with several methods to get client IP
+https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript/32841164#32841164
 
+Working Demo Site collecting private IP:
+https://stackoverflow.com/questions/41711703/how-to-get-client-ip-address-in-javascript
+
+userinfo.js
+https://github.com/vdurmont/userinfo-js
 
 
 #Errors
-
+Couldn't get userinf0.js to work. I don't get any errors so I assume it's something wrong with their infrastructure.
 
