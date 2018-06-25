@@ -1,0 +1,63 @@
+#ToDo
+ [ ] Cite in comments
+
+
+
+
+
+
+
+
+#Build Notes
+For the "CurrentSession" tables I tried several different approaches using floats and absolutes. Ultimately I just went with %based left aligned floats. It looks better and I kept running into top alignment problems.
+In testing some of the mobile browsers I found the percentage based layouts did not work well but I found a way to do conditional layout for low width screens.
+I removed the hardlines from the tables on current session. I needed them before I had CSS to tell where one started and one finished but now they just cause clutter.
+I rebuilt the FAQ page to take advantage of CSS. It's not an unordered list anymore but the results are IMO better and I learned a lot about CSS rebuilding it.
+
+
+#What I learned
+- Add <link rel="stylesheet" type="text/css" href="mystylesheet.css" /> to add a stylesheet
+- Always use external
+- ID can only be used once per page
+- Class can be used multiple times per page
+- selectors:
+    Whitespace - and
+    > child selector
+    : pseudo classes 
+/* comment */
+Keywords:
+    thin, thick, larger
+Specificity - the more targetted something is, the more powerful the match
+Box Model 
+If you use a background color, it's easier to see where your blocks are during layout
+
+
+#What did not go well
+
+
+#What I would do differently
+
+
+#Reference
+Compatibility
+https://quirksmode.org/css/
+All Properties
+https://www.w3schools.com/cssref/css3_pr_all.asp
+Three Column layout
+https://www.w3schools.com/howto/howto_css_three_columns.asp
+CSS Color codes:
+Google "css color picker"
+Color Scheme Generator:
+https://coolors.co/
+Medium Article on CSS:
+https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
+Table Centering with CSS:
+https://www.granneman.com/webdev/coding/css/centertables
+Fancy FAQ Page using CSS3:
+https://catalin.red/fancy-faq-page-using-css3-only/
+
+
+
+#Errors
+
+

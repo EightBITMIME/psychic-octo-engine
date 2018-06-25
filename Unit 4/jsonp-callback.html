@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>UserInfo.io — JSONP callback</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    function userinfoCallback(data) {
+      console.log("I can now do awesome things with this beautiful data I just received!");
+      console.dir(data);
+    }
+    </script>
+    <script type="text/javascript" src="https://api.userinfo.io/userinfos?jsonp_callback=userinfoCallback"></script>
+  </script>
+  </head>
+  <body>
+  </body>
+</html>
