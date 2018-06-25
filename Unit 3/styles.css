@@ -35,8 +35,6 @@ caption
         padding: 15px 32px;
         display: inline-block;
     }
-
-
 #TopSection
     {
         margin-left:auto; 
@@ -60,8 +58,33 @@ caption
         float: left;
         width: 33.33%;
     }
-
-
+#History
+    {
+        margin-left:auto; 
+        margin-right:auto; 
+        text-align:center; 
+        width:50%;
+    }
+#Contact
+    {
+        font-size: 1em;
+        padding: 0% 10%;
+    }
+#Privacy
+    {
+        font-size: .75em;
+        padding: 0% 10%;
+    }
+#Delete
+    {
+        font-size: 1.5em;
+        margin: 10%
+    }
+#FAQ
+    {
+        margin-left:10%;
+        margin-right:10%;
+    }
 #pagenav
     {
         position: fixed;

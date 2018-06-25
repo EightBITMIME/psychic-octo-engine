@@ -82,14 +82,15 @@
  - If you are working in a text editor, jumping back to a slower rich text editor (Evernote) is not worth the hassle. It is just as easy to just use a text file to capture diary information.
 
 ## What did not go well
- I spent a lot of time typing then removing deprecated attributes. The standard has changed a lot and a lot of the online examples and tutorials are aging poorly. 
-
- I also spent a lot more time than I should on getting the three tables in "CurrentSession.html" to work. I think I learned a lot about tables in the process but lost most of an afternoon.
+- I spent a lot of time typing then removing deprecated attributes. The standard has changed a lot and a lot of the online examples and tutorials are aging poorly. 
+- I also spent a lot more time than I should on getting the three tables in "CurrentSession.html" to work. I think I learned a lot about tables in the process but lost most of an afternoon.
 
 ## What I would do differently
  - I would absolutely use a richer text editor like VS.code. Things like tag autocompletion and autoindentation are a huge improvement over basic notepad. Just having line numbers would have improved the experience greatly. 
  - For the next module I'm going to try to setup Git to talk to the student server directly so I can work "live" from the online server. It will save a little time and I will learn a little bit more about git in the process.
  - If I was doing this after completing the course I would focus more on building out the capability before building the pages. My current set have a lot of placeholder data. Also using CSS and Javascript would have made some of the table building easier to troubleshoot.
+- Implementing a consent box without using javascript was harder than I expected. It's sort of hacky but it will improve once I bring some scripting into the site.
+- For the "Current Session" page, I intend on having four tables in total but I think I need CSS to do that. I tried to do it with tables inside tables but I couldn't get it past the validator and honestly it doesn't make sense with the ultimate design of the site. I think all the table entries will end up looking kind of rough at this point but bringing in CSS (and table data) will really clean it up.
 
 
 ## Errors
