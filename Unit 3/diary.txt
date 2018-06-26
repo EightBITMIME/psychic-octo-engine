@@ -33,9 +33,12 @@ If you use a background color, it's easier to see where your blocks are during l
 
 
 #What did not go well
+I learned a valuable lesson about case sensitivity. When I uploaded my css files, one of them had an uppcase letter in the name that was not in my link definition. Windows is case insensitive so it just worked but when I uploaded it to the server, it just didn't work. I tried a few different browsers until I realized the difference in file names.
 
 
 #What I would do differently
+I would develop the CSS stylesheet in tandem with the HTML. It's easier to make sure IDs and classes are used appropriately when you understand how they interact. I would also have built the buttons differently to effectively use class identifiers.
+I spent a lot of time working with absolute positioning that was a waste. I don't think I would do that again unless I really need to. A key deliverable for my personas is a consistent mobile experience and absolute locations do not work well with low rez screens.
 
 
 #Reference

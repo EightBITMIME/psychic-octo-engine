@@ -16,8 +16,13 @@
 
 #Build Notes
 Most of the examples / samples I found are missing the return component. I assume things like Angular, Node and Jquery make these easy bolt ons but getting the results of the script back into the page are not intuitive.
+I used this script from Stack Overflow:
+https://stackoverflow.com/a/41711747 - Author Sarika Koli, Posted Jan 18, 2017. I unwrapped the HTML elements so I could use it as pure Javascript.
 
+This code is covered under the MIT license. To comply with it, I need to link back to the original work and optionally include the entire MIT license in the code to "future proof" the code. 
+https://meta.stackexchange.com/questions/271080/the-mit-license-clarity-on-using-code-on-stack-overflow-and-stack-exchange
 
+The script uses the Webrtc capabilities in HTML5 to idenify a clients real IP address. In order for WebRTC to work behind networks using technologies like NAT (network address traversal), HTML5 supports a protocol called ICE (Interactive Connectivity Estalishment). This process allows endpoints to share thier IP information. This script 
 
 
 #What I learned
@@ -26,8 +31,9 @@ In page Javascript:
     <script type="text/javascript">
     // some Javascript commands...
     </script>
-Ah, now I get it. Linking is only one part -to execute the script, you need to use this syntax:
-<script type="text/javascript" src="privateip.js"></script>
+Ah, now I get it. You aren't linking the javascript in the head section, you are executing the script in the body section.
+I figured out a way to write back info from the javascript - I just need to create a <p class="return variable"> to use the results.
+
 
 
 
@@ -45,8 +51,11 @@ https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-j
 Working Demo Site collecting private IP:
 https://stackoverflow.com/questions/41711703/how-to-get-client-ip-address-in-javascript
 
-userinfo.js
-https://github.com/vdurmont/userinfo-js
+Stack Overflow License discussion:
+https://meta.stackexchange.com/questions/271080/the-mit-license-clarity-on-using-code-on-stack-overflow-and-stack-exchange
+
+WebRTC Explained:
+https://www.html5rocks.com/en/tutorials/webrtc/basics/
 
 
 #Errors
