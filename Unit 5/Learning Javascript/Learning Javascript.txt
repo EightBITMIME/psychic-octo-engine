@@ -1,0 +1,20 @@
+Notes
+
+plnkr.co
+javascript is case sensitive and ignores whitespace
+Variable names use camelCase
+Javascript reserved keywords
+Double quotes allow you to include apostrophes
+Escape with \
+variable names cannot begin with a number
++ symbol concatenates
+//comment
+Array methods
+triple === 
+standard built in objects
+
+scripts should go at the bottom of body
+
+
+
+

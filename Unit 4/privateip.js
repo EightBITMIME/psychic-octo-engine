@@ -1,5 +1,7 @@
 //Koli, Sarika. (2017, 01, 18)How to get client IP address in JavaScript? retrieved from https://stackoverflow.com/a/41711747
 
+//This script uses WebRTC to identify the clients real, source IP and returns it as an object named ipAdd
+
 
 
 $(document).ready(function ubsrt()

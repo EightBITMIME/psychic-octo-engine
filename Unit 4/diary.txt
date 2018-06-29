@@ -17,12 +17,12 @@
 #Build Notes
 Most of the examples / samples I found are missing the return component. I assume things like Angular, Node and Jquery make these easy bolt ons but getting the results of the script back into the page are not intuitive.
 I used this script from Stack Overflow:
-https://stackoverflow.com/a/41711747 - Author Sarika Koli, Posted Jan 18, 2017. I unwrapped the HTML elements so I could use it as pure Javascript.
+https://stackoverflow.com/a/41711747 - Author Sarika Koli, Posted Jan 18, 2017. I unwrapped the HTML elements so I could use it as pure Javascript and linked it in "CurrentSession.html". This script populates the "private IP address" box in the user information session. The original, unaltered code is stored in IPDemo.html.
 
 This code is covered under the MIT license. To comply with it, I need to link back to the original work and optionally include the entire MIT license in the code to "future proof" the code. 
 https://meta.stackexchange.com/questions/271080/the-mit-license-clarity-on-using-code-on-stack-overflow-and-stack-exchange
 
-The script uses the Webrtc capabilities in HTML5 to idenify a clients real IP address. In order for WebRTC to work behind networks using technologies like NAT (network address traversal), HTML5 supports a protocol called ICE (Interactive Connectivity Estalishment). This process allows endpoints to share thier IP information. This script 
+The script uses the Webrtc capabilities in HTML5 to idenify a clients real IP address. In order for WebRTC to work behind networks using technologies like NAT (network address traversal), HTML5 supports a protocol called ICE (Interactive Connectivity Estalishment). This process allows endpoints to share thier IP information. This script is short and well indented but does not have any comments. The variable names are clear enough to infer what the script is doing. There is no error handling in this script.
 
 
 #What I learned
@@ -39,9 +39,16 @@ I figured out a way to write back info from the javascript - I just need to crea
 
 
 #What did not go well
+It's really hard to debug someone else's script. I found a number of good candidates that relied on external APIs and shared libraries and I avoided those to keep this module simple.
+
+I found a really interesting library called userinfo.js. Ultimately I abandoned it because I think it relies on infrastructure that is no longer online but I learned alot. 
+
+I spent a lot of time trying to figure out how to return data from an external script. It made sense once I figured it out but I spent a while with the script in the wrong part of the page and a long time figuring out what HTML attributes can display text.
 
 
 #What I would do differently
+If I was doing this differently, I would have used easier code. Figuring out how the WebRTC code interacts with the ICE protocol was pretty far into the weeds but I did learn alot. 
+I would also make better use of the web console. I spent a long time trying different things with one of the scripts only to find the error in the console.
 
 
 #Reference
@@ -57,7 +64,14 @@ https://meta.stackexchange.com/questions/271080/the-mit-license-clarity-on-using
 WebRTC Explained:
 https://www.html5rocks.com/en/tutorials/webrtc/basics/
 
+Userinfo-js
+https://github.com/vdurmont/userinfo-js
+
+MIT License
+https://opensource.org/licenses/MIT
 
 #Errors
-Couldn't get userinf0.js to work. I don't get any errors so I assume it's something wrong with their infrastructure.
+Couldn't get userinfo.js to work. I don't get any errors so I assume it's something wrong with their infrastructure.
+Initially had the javascript linked in the head section.
+Set the class value on the TD attribute initially.
 

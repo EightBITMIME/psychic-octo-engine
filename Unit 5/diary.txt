@@ -1,0 +1,82 @@
+#Todo
+
+
+
+
+
+
+
+
+#Build Notes
+
+
+
+
+
+
+#What I learned
+plnkr.co
+javascript is case sensitive and ignores whitespace
+Variable names use camelCase
+Javascript reserved keywords
+Double quotes allow you to include apostrophes
+Escape with \
+variable names cannot begin with a number
++ symbol concatenates
+//comment
+Array methods
+triple === 
+standard built in objects
+
+scripts should go at the bottom of body
+
+Be very careful with case / switch and break. Put the break in right after you make the case.
+
+
+
+email Regex:
+/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+Phone Regex:
+/^[+]?(1\-|1\s|1|\d{3}\-|\d{3}\s|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/g
+
+
+
+
+
+
+
+
+
+#What did not go well
+
+
+
+
+
+#What I would do differently
+
+
+
+
+
+
+#Resources
+Javascript IDE
+plnkr.co
+
+Email REgex
+
+Email Address Regular Expression That 99.99% Works. (n.d.). Retrieved June 28, 2018, from http://emailregex.com/
+
+Using Regex in Javascript:
+JavaScript Regular Expressions. (n.d.). Retrieved June 28, 2018, from https://www.w3schools.com/js/js_regexp.asp
+
+Phone Regex:
+Roelofs. (2017, October 25). Validate phone number with JavaScript. Retrieved June 28, 2018, from https://stackoverflow.com/questions/4338267/validate-phone-number-with-javascript
+
+
+Citation Machine:
+http://www.citationmachine.net/apa/cite-a-website
+APA Citation Format Generator - Citation Machine. (n.d.). Retrieved June 28, 2018, from http://www.citationmachine.net/apa/cite-a-website
+
+#Errors
