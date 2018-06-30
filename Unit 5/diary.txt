@@ -34,6 +34,8 @@ Be very careful with case / switch and break. Put the break in right after you m
 Cookies automatically handle conflicts and updates. 
 
 
+I need to create a new set of functions to color the input box. I'll make it red for invalid and green for valid and saved to cookie.
+
 email Regex:
 /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 Phone Regex:

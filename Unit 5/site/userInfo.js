@@ -1,23 +1,52 @@
 // Code goes here
 // Code goes here
 //validates input. Potential inputtypes go in input1. Acceptable values are phone, email and text
+
+
 let input1 = "phone";
 let input2 = "dwaynecyr@gmail.com"
+
+var email = document.getElementById("email");
+email.addEventListener("focus", myFocusFunction, true);
+email.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+    document.getElementById("email").style.backgroundColor = "yellow"; 
+    console.log("myfocus")
+}
+
+function myBlurFunction() {
+    document.getElementById("email").style.backgroundColor = ""; 
+    console.log("myblur")
+}
+
+
+
+
+
 
 isValid = validateInput(input1, input2);
 if (isValid === true) {
   setCookie(input1,input2)
 } console.log("input is invalid, no cookie for you");
 
-//document.cookie = "cookie=oatmeal";
-//myCookie = document.cookie.tostring;
-//setCookie ("snack", "muffin");
+
 console.log (document.cookie);
 
 console.log (isValid, input1,  input2);
+function emailBlur()
+  {
+    document.getElementById("email").style.backgroundColor = "green";
+    console.log ("blur called");
+  }
+  function myFocusFunction() {
+    document.getElementById("email").style.backgroundColor = "yellow"; 
+}
+
+//Functions Down here
+//-----------------------------------------------------------------------------
 
 //creates a cookie with the furthest out expiration date possible on 32 bit systems.
-
 //Shaedrich. et al (2018, June 21). Document.cookie. Retrieved June 30, 2018, from https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 function setCookie(cookieKey, cookieValue) {
   document.cookie = cookieKey + "=" + cookieValue;

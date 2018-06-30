@@ -1,0 +1,69 @@
+<form id="myForm">
+        <input type="text" id="myInput">
+        <input type="text" id="notInput">
+      </form>
+
+
+<div id="TopSection">
+        <h1>Current Session</h1>
+        <h2>User Information</h2>
+        <table>
+                <caption>User Information</caption>
+                <thead>
+                    <tr>
+                        <th> Email </th>
+                        <th> First Name </th>
+                        <th> Last Name </th>
+                        <th> Postal Code </th>
+                        <th> Phone Number </th>
+                        <th> Private IP Addr</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                            <td>
+                                <input type="text" id="email">
+                                
+                            </td>
+                             <td>
+                           
+                                <input type="text" id="first">
+                            
+                        </td>
+                        <td>
+                            
+                                <input type="text" value="" id="last" name="last">
+                            
+                        </td>
+                        <td>
+                            
+                                <input type="text" value="" id="postal" name="postal">
+                            
+                        </td>
+                        <td>
+                            
+                                <input type="text" value="" id="phone" name="phone">
+                            
+                        </td>
+                        <td><p class='ipAdd'></p></td>
+                    
+                    </tbody>
+            </table>
+    </div>
+
+      <script>
+      var x = document.getElementById("email");
+      x.addEventListener("focus", myFocusFunction, true);
+      x.addEventListener("blur", myBlurFunction, true);
+      
+      function myFocusFunction() {
+          document.getElementById("email").style.backgroundColor = "green";
+          document.getElementById("first").style.backgroundColor = "purple"; 
+      }
+      
+      function myBlurFunction() {
+          document.getElementById("email").style.backgroundColor = ""; 
+          document.getElementById("first").style.backgroundColor = "";
+      }
+      </script>

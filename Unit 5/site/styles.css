@@ -5,18 +5,39 @@ body
 h1  {
     text-align:center;
 }
-
+h2  {
+    text-align:center;
+}
+input[type=text]
+    {
+        text-align:center;
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+    input[type=email]
+    {
+        text-align:center;
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
 table, th, td
     {
         border: 1px solid grey;
         text-align:center;
         table-layout: fixed;
-        width: 100px;
+        width:100%;
+        padding:10px;
     }
 caption
     {
         background-color:grey;
         Border: 1px solid grey;
+    }
+#mail
+    {
+        background-color:red;
     }
 #Consent
     {
@@ -39,24 +60,22 @@ caption
     {
         margin-left:auto; 
         margin-right:auto; 
-        text-align:center; 
-        width:50%;
-        
+        text-align:center;
     }
 #ServerInfo
     {
         float: left;
-        width: 33.33%;       
+        width: 33.33%;     
     }
 #OSINT
     {
         float: left;
-        width: 33.33%;       
+        width: 33.33%;   
     }
 #Session
     {
         float: left;
-        width: 33.33%;
+        width: 33.33%; 
     }
 #History
     {
