@@ -1,11 +1,3 @@
-// Code goes here
-// Code goes here
-//validates input. Potential inputtypes go in input1. Acceptable values are phone, email and text
-
-
-let input1 = "phone";
-let input2 = "dwaynecyr@gmail.com"
-
 //create event listeners for each field in the user information block
 var userAttr = ["email", "first", "last", "postal", "phone"]
 var i;
@@ -15,62 +7,16 @@ for (i= 0; i < userAttr.length; i++)
     j.addEventListener("focus",myFocusFunction, true);
     j.addEventListener("blur", myBlurFunction, true);
   }
-//var email = document.getElementById("email");
-//email.addEventListener("focus",myFocusFunction, true);
-//email.addEventListener("blur", myBlurFunction, true);
+  //set initial values based on the entries in the cookie
+  document.getElementById("email").value =getCookie("email");
+  document.getElementById("first").value =getCookie("first");
+  document.getElementById("last").value =getCookie("last");
+  document.getElementById("phone").value =getCookie("phone");
   
-function myFocusFunction() {
-    
-    var x = document.getElementById("form1");
-      var attr = "";
-      var i;
-      for (i= 0; i < x.length; i++)
-        {
-          j = x.elements[i].value
-          attr += x.elements[i].value + "<br>";
-        }
-      //validate email
-      validateInput ("email", x.elements[0].value);
-      if (validateInput ("text", x.elements[1].value) === true)
-        {
-          setCookie("first",x.elements[1].value);
-          document.getElementById("first").style.backgroundColor = "lightgreen"; 
-        } else
-          {
-            document.getElementById("first").style.backgroundColor = "#ef3d47"; 
-          };
-      validateInput ("text", x.elements[2].value);
-      if (validateInput ("text", x.elements[2].value) === true)
-        {
-          setCookie("last",x.elements[2].value);
-          document.getElementById("last").style.backgroundColor = "lightgreen"; 
-        } else
-          {
-            document.getElementById("last").style.backgroundColor = "#ef3d47"; 
-          };
-      validateInput ("phone", x.elements[4].value);
-    console.log(attr);
-    }
-
-function myBlurFunction() {
-    document.getElementById("email").style.backgroundColor = ""; 
-    console.log("myblur");
-}
 
 
 
-isValid = validateInput(input1, input2);
-if (isValid === true) {
-  setCookie(input1,input2)
-} //console.log("input is invalid, no cookie for you");
-
-
-//console.log (document.cookie);
-
-//console.log (isValid, input1,  input2);
-
-
-//Functions Down here
+//Functions:
 //-----------------------------------------------------------------------------
 
 //creates a cookie with the furthest out expiration date possible on 32 bit systems.
@@ -78,17 +24,11 @@ if (isValid === true) {
 function setCookie(cookieKey, cookieValue) {
   document.cookie = cookieKey + "=" + cookieValue;
   document.cookie = "max-age=3153600";
-  document.cookie = "path=/privexplorer"
-  console.log ("cookie function") 
+  document.cookie = "path=/privexplorer";
+  console.log ("updated cookie:" + document.cookie ) ;
   
 }
 
-
-
-function getCookie (cookieKey, cookieValue){
-  
-  
-}
 
 
 // Validates input as long as input1 matches a recognized type. Returns Boolean.
@@ -153,4 +93,63 @@ if (emailTest === true) {
 return emailTest;
 }
 
+//This is the focus function. It ties up all the other functions. It fires when focus 
+//changes on any fields. It's performing input validation on email, first, last and phone.
+//if they are valid, they get written to the cookie and the field turns green. If not, it
+//turns red.
 
+function myFocusFunction() {
+    
+  var x = document.getElementById("form1");
+    var attr = "";
+    var i;
+    for (i= 0; i < x.length; i++)
+      {
+        j = x.elements[i].value
+        attr += x.elements[i].value + "<br>";
+      }
+    //validate email
+    validateInput ("email", x.elements[0].value);
+    if (validateInput ("text", x.elements[1].value) === true)
+      {
+        setCookie("first",x.elements[1].value);
+        document.getElementById("first").style.backgroundColor = "lightgreen"; 
+      } else
+        {
+          document.getElementById("first").style.backgroundColor = "#ef3d47"; 
+        };
+    validateInput ("text", x.elements[2].value);
+    if (validateInput ("text", x.elements[2].value) === true)
+      {
+        setCookie("last",x.elements[2].value);
+        document.getElementById("last").style.backgroundColor = "lightgreen"; 
+      } else
+        {
+          document.getElementById("last").style.backgroundColor = "#ef3d47"; 
+        };
+    validateInput ("phone", x.elements[4].value);
+  ///console.log(attr);
+  }
+//not used. Keeping it here as a reminder in case I need it for something else.
+function myBlurFunction() {
+  //document.getElementById("email").style.backgroundColor = ""; 
+  //console.log("myblur");
+}
+
+//this gets the value from a cookie if you provide the key.
+//JavaScript Cookies. (n.d.). Retrieved June 30, 2018, from https://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+      }
+  }
+  return "";
+}
