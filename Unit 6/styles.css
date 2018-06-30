@@ -1,0 +1,135 @@
+body
+    {
+        font-family: Sans-Serif;
+    }
+h1  {
+    text-align:center;
+}
+h2  {
+    text-align:center;
+}
+input[type=text]
+    {
+        text-align:center;
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+    input[type=email]
+    {
+        text-align:center;
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+table, th, td
+    {
+        border: 1px solid grey;
+        text-align:center;
+        table-layout: fixed;
+        width:100%;
+        padding:10px;
+    }
+caption
+    {
+        background-color:grey;
+        Border: 1px solid grey;
+    }
+#mail
+    {
+        background-color:red;
+    }
+#Consent
+    {
+        font-size: 2em;
+        padding: 0% 10%;
+       
+    }
+.consentbutton
+    {
+        text-align: center;
+        width:75%;
+        margin-left:10%;
+        font-size: 2.5em;
+        cursor: pointer;
+        background-color:red;
+        padding: 15px 32px;
+        display: inline-block;
+    }
+#TopSection
+    {
+        margin-left:auto; 
+        margin-right:auto; 
+        text-align:center;
+    }
+#ServerInfo
+    {
+        float: left;
+        width: 33.33%;     
+    }
+#OSINT
+    {
+        float: left;
+        width: 33.33%;   
+    }
+#Session
+    {
+        float: left;
+        width: 33.33%; 
+    }
+#History
+    {
+        margin-left:auto; 
+        margin-right:auto; 
+        text-align:center; 
+        width:50%;
+    }
+#Contact
+    {
+        font-size: 1em;
+        padding: 0% 10%;
+    }
+#Privacy
+    {
+        font-size: .75em;
+        padding: 0% 10%;
+    }
+#Delete
+    {
+        font-size: 1.5em;
+        margin: 10%
+    }
+#FAQ
+    {
+        margin-left:10%;
+        margin-right:10%;
+    }
+#pagenav
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: White;
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other. Found on https://www.w3schools.com/howto/howto_css_three_columns.asp */
+@media screen and (max-width: 600px) {
+    #ServerInfo
+    {
+        width: 100%;       
+    }
+    #OSINT
+    {
+        width: 100%;       
+    }
+    #Session
+    {
+        width: 100%;
+    }
+}
