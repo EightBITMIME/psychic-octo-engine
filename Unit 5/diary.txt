@@ -81,7 +81,6 @@ Cookie info:
 //Shaedrich. et al (2018, June 21). Document.cookie. Retrieved June 30, 2018, from https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 
 Citation Machine:
-http://www.citationmachine.net/apa/cite-a-website
 APA Citation Format Generator - Citation Machine. (n.d.). Retrieved June 28, 2018, from http://www.citationmachine.net/apa/cite-a-website
 
 #Errors
