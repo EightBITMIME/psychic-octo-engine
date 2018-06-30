@@ -31,7 +31,7 @@ standard built in objects
 scripts should go at the bottom of body
 
 Be very careful with case / switch and break. Put the break in right after you make the case.
-
+Cookies automatically handle conflicts and updates. 
 
 
 email Regex:
@@ -73,7 +73,10 @@ JavaScript Regular Expressions. (n.d.). Retrieved June 28, 2018, from https://ww
 
 Phone Regex:
 Roelofs. (2017, October 25). Validate phone number with JavaScript. Retrieved June 28, 2018, from https://stackoverflow.com/questions/4338267/validate-phone-number-with-javascript
-
+Cookie Expiration Date:
+PiTheNumber. (2014, March 18). Set a cookie to never expire. Retrieved June 30, 2018, from https://stackoverflow.com/questions/3290424/set-a-cookie-to-never-expire
+Cookie info:
+//Shaedrich. et al (2018, June 21). Document.cookie. Retrieved June 30, 2018, from https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 
 Citation Machine:
 http://www.citationmachine.net/apa/cite-a-website

@@ -1,26 +1,29 @@
 // Code goes here
 // Code goes here
-
-let input1 = "text";
-let input2 = "Dwayne"
+//validates input. Potential inputtypes go in input1. Acceptable values are phone, email and text
+let input1 = "phone";
+let input2 = "dwaynecyr@gmail.com"
 
 isValid = validateInput(input1, input2);
 if (isValid === true) {
   setCookie(input1,input2)
-};
+} console.log("input is invalid, no cookie for you");
 
-document.cookie = "username=John Doe";
+//document.cookie = "cookie=oatmeal";
 //myCookie = document.cookie.tostring;
-
+//setCookie ("snack", "muffin");
 console.log (document.cookie);
 
 console.log (isValid, input1,  input2);
 
+//creates a cookie with the furthest out expiration date possible on 32 bit systems.
 
+//Shaedrich. et al (2018, June 21). Document.cookie. Retrieved June 30, 2018, from https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
 function setCookie(cookieKey, cookieValue) {
-  document.cookie = cookieKey + "=" + cookieValue + ";expires=Thu, 18 Dec 2013 12:00:00 UTC;path=/";
-   // document.cookie = "email=dcyr@textron.com;;expires=Thu, 18 Dec 2013 12:00:00 UTC;path=/";
- console.log ("cookie function") 
+  document.cookie = cookieKey + "=" + cookieValue;
+  document.cookie = "max-age=3153600";
+  document.cookie = "path=/privexplorer"
+  console.log ("cookie function") 
   
 }
 
@@ -49,6 +52,7 @@ switch (input1) {
     break;
   default:
       isValid = false;
+      console.log ("inputtype is invalid. No cookie for you")
   };
 return isValid
 }
@@ -59,7 +63,7 @@ function validateText (text) {
   let textPattern = /^[A-Za-z]*$/
   let textTest = textPattern.test(text);
   return textTest
-}
+} 
 
 
 //Validates incoming phone number to make sure it looks like a number. Returns Boolean
