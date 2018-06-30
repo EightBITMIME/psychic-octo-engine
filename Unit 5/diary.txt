@@ -57,7 +57,7 @@ Phone Regex:
 
 #What I would do differently
 
-
+Create a programatic approach to creating all the focus listeners
 
 
 

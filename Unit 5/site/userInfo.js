@@ -6,42 +6,69 @@
 let input1 = "phone";
 let input2 = "dwaynecyr@gmail.com"
 
-var email = document.getElementById("email");
-email.addEventListener("focus", myFocusFunction, true);
-email.addEventListener("blur", myBlurFunction, true);
-
+//create event listeners for each field in the user information block
+var userAttr = ["email", "first", "last", "postal", "phone"]
+var i;
+for (i= 0; i < userAttr.length; i++)
+  {
+    var j = document.getElementById(userAttr[i]);
+    j.addEventListener("focus",myFocusFunction, true);
+    j.addEventListener("blur", myBlurFunction, true);
+  }
+//var email = document.getElementById("email");
+//email.addEventListener("focus",myFocusFunction, true);
+//email.addEventListener("blur", myBlurFunction, true);
+  
 function myFocusFunction() {
-    document.getElementById("email").style.backgroundColor = "yellow"; 
-    console.log("myfocus")
-}
+    
+    var x = document.getElementById("form1");
+      var attr = "";
+      var i;
+      for (i= 0; i < x.length; i++)
+        {
+          j = x.elements[i].value
+          attr += x.elements[i].value + "<br>";
+        }
+      //validate email
+      validateInput ("email", x.elements[0].value);
+      if (validateInput ("text", x.elements[1].value) === true)
+        {
+          setCookie("first",x.elements[1].value);
+          document.getElementById("first").style.backgroundColor = "lightgreen"; 
+        } else
+          {
+            document.getElementById("first").style.backgroundColor = "#ef3d47"; 
+          };
+      validateInput ("text", x.elements[2].value);
+      if (validateInput ("text", x.elements[2].value) === true)
+        {
+          setCookie("last",x.elements[2].value);
+          document.getElementById("last").style.backgroundColor = "lightgreen"; 
+        } else
+          {
+            document.getElementById("last").style.backgroundColor = "#ef3d47"; 
+          };
+      validateInput ("phone", x.elements[4].value);
+    console.log(attr);
+    }
 
 function myBlurFunction() {
     document.getElementById("email").style.backgroundColor = ""; 
-    console.log("myblur")
+    console.log("myblur");
 }
-
-
-
 
 
 
 isValid = validateInput(input1, input2);
 if (isValid === true) {
   setCookie(input1,input2)
-} console.log("input is invalid, no cookie for you");
+} //console.log("input is invalid, no cookie for you");
 
 
-console.log (document.cookie);
+//console.log (document.cookie);
 
-console.log (isValid, input1,  input2);
-function emailBlur()
-  {
-    document.getElementById("email").style.backgroundColor = "green";
-    console.log ("blur called");
-  }
-  function myFocusFunction() {
-    document.getElementById("email").style.backgroundColor = "yellow"; 
-}
+//console.log (isValid, input1,  input2);
+
 
 //Functions Down here
 //-----------------------------------------------------------------------------
@@ -100,6 +127,13 @@ function validatePhone (phone) {
 //Roelofs. (2017, October 25). Validate phone number with JavaScript. Retrieved June 28, 2018, from https://stackoverflow.com/questions/4338267/validate-phone-number-with-javascript
   let phonePattern = /^[+]?(1\-|1\s|1|\d{3}\-|\d{3}\s|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/g
   let phoneTest = phonePattern.test (phone);
+  if (phoneTest === true) {
+    setCookie("phone",phone);
+    document.getElementById("phone").style.backgroundColor = "lightgreen"; 
+  } else
+    {
+      document.getElementById("phone").style.backgroundColor = "#ef3d47"; 
+    }
   return phoneTest;
 }
 
@@ -109,6 +143,13 @@ function validateEmail (email) {
 //Email Address Regular Expression That 99.99% Works. (n.d.). Retrieved June 28, 2018, from http://emailregex.com/
 let emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let emailTest = emailPattern.test(email);
+if (emailTest === true) {
+  setCookie("email",email);
+  document.getElementById("email").style.backgroundColor = "lightgreen"; 
+} else
+  {
+    document.getElementById("email").style.backgroundColor = "#ef3d47"; 
+  }
 return emailTest;
 }
 
